@@ -129,7 +129,7 @@ export default function AllUserDetails({ searchValue, apiEndpoint }: SearchProps
       {isloggedIn && <Stack
         styles={{
           root: {
-            width: '90%',
+            width: '80%',
             margin: '5em auto',
             padding: '20px',
             border: '1px solid #ccc'
@@ -159,15 +159,15 @@ export default function AllUserDetails({ searchValue, apiEndpoint }: SearchProps
           <Table>
             <TableHeader>
               <TableRow style={{ borderBottom: '.1em solid', marginTop: '.2em' }}>
-                <TableHeaderCell >Sl No.</TableHeaderCell>
-                <TableHeaderCell >Name</TableHeaderCell>
-                <TableHeaderCell >Username</TableHeaderCell>
-                <TableHeaderCell >Email</TableHeaderCell>
-                <TableHeaderCell >Phone</TableHeaderCell>
-                <TableHeaderCell >DOB</TableHeaderCell>
-                <TableHeaderCell >Created At</TableHeaderCell>
-                <TableHeaderCell >Qualifications</TableHeaderCell>
-                <TableHeaderCell >Action</TableHeaderCell>
+                <TableHeaderCell  style={{ width: '80px' }}>Sl No.</TableHeaderCell>
+                <TableHeaderCell  style={{ width: '150px' }}>Name</TableHeaderCell>
+                <TableHeaderCell style={{ width: '150px' }} >Username</TableHeaderCell>
+                <TableHeaderCell style={{ width: '250px' }} >Email</TableHeaderCell>
+                <TableHeaderCell  >Phone</TableHeaderCell>
+                <TableHeaderCell  >DOB</TableHeaderCell>
+                <TableHeaderCell  >Created At</TableHeaderCell>
+                <TableHeaderCell  >Qualifications</TableHeaderCell>
+                <TableHeaderCell  >Action</TableHeaderCell>
               </TableRow>
             </TableHeader>
             <TableBody>

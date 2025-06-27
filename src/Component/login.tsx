@@ -54,7 +54,7 @@ export default function Login() {
       }
     )
       .then(response => {
-        console.log('Login successful:', response.data.user);
+        // console.log('Login successful:', response.data.user);
         alert(response.data.message);
         setUsername('');
         setPassword('');
@@ -67,7 +67,7 @@ export default function Login() {
       })
       .catch(error => {
         window.localStorage.setItem("isloggedIn", "false");
-        console.error('Login failed:', error);
+        // console.error('Login failed:', error);
         alert('User Not Found');
       });
   };
