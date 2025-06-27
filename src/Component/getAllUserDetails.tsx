@@ -158,16 +158,16 @@ export default function AllUserDetails({ searchValue, apiEndpoint }: SearchProps
         >
           <Table>
             <TableHeader>
-              <TableRow style={{ borderBottom: '.1em solid', marginTop: '.2em' }}>
-                <TableHeaderCell  style={{ width: '80px' }}>Sl No.</TableHeaderCell>
-                <TableHeaderCell  style={{ width: '150px' }}>Name</TableHeaderCell>
-                <TableHeaderCell style={{ width: '150px' }} >Username</TableHeaderCell>
-                <TableHeaderCell style={{ width: '250px' }} >Email</TableHeaderCell>
-                <TableHeaderCell  >Phone</TableHeaderCell>
-                <TableHeaderCell  >DOB</TableHeaderCell>
-                <TableHeaderCell  >Created At</TableHeaderCell>
-                <TableHeaderCell  >Qualifications</TableHeaderCell>
-                <TableHeaderCell  >Action</TableHeaderCell>
+              <TableRow style={{ borderBottom: '.1em solid', marginTop: '.2em' , width : "100%"}}>
+                <TableHeaderCell  style={{ width: '5%'}}>Sl No.</TableHeaderCell>
+                <TableHeaderCell  style={{ width: '12%'}}>Name</TableHeaderCell>
+                <TableHeaderCell  style={{ width: '8%'}} >Username</TableHeaderCell>
+                <TableHeaderCell  style={{ width: '15%'}} >Email</TableHeaderCell>
+                <TableHeaderCell  style={{ width: '8%'}}>Phone</TableHeaderCell>
+                <TableHeaderCell  style={{ width: '8%'}}>DOB</TableHeaderCell>
+                <TableHeaderCell  style={{ width: '9%'}}>Created At</TableHeaderCell>
+                <TableHeaderCell  style={{ width: '20%'}}>Qualifications</TableHeaderCell>
+                <TableHeaderCell  style={{ width: '15%'}}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Action</TableHeaderCell>
               </TableRow>
             </TableHeader>
             <TableBody>
