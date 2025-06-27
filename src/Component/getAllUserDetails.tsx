@@ -78,14 +78,12 @@ export default function AllUserDetails({ searchValue, apiEndpoint }: SearchProps
         alert(`Error  : ${err}`);
       });
   };
-
+  debugger;
   useEffect(() => {
     const endpoint =
       apiEndpoint && apiEndpoint.trim() !== ''
         ? `${apiEndpoint}?startPage=${currentPage}&limit=${limit}`
         : `http://localhost:5028/api/UserService/get-all-user?startPage=${currentPage}&limit=${limit}`;
-
-    console.log(`${apiEndpoint}?pageNumber=${currentPage}&limit=${limit}`)
     axios
       .get(endpoint, { withCredentials: true })
       .then((res) => {
@@ -146,7 +144,7 @@ export default function AllUserDetails({ searchValue, apiEndpoint }: SearchProps
             fontSize: '1em', gap: '10px', border: '.1em solid',
             borderColor: 'gray',
             padding: '.5em',
-            borderRadius : "1em"
+            borderRadius: "1em"
           }}>
             Add User<AddRegular fontSize={'20px'} onClick={() => navigate('/register')} />
           </Button>
@@ -192,10 +190,11 @@ export default function AllUserDetails({ searchValue, apiEndpoint }: SearchProps
                     </ul>
                   </TableCell>
                   <TableCell>
-                    <Button onClick={() => handleRemove(user.id)} appearance="primary" style={{ background: "#dc3545", color: "white" }}>
-                      <Delete24Regular color="white" />
+                    <Button onClick={() => handleRemove(user.id)} appearance="primary" >
+                      <Delete24Regular color="red" />
                     </Button>
                   </TableCell>
+
                 </TableRow>
               ))}
             </TableBody>
