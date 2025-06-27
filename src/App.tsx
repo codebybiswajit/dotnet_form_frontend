@@ -6,29 +6,28 @@ import Login from './Component/login';
 import GetAllUser from './Component/getUser';
 import AllUserDetails from './Component/getAllUserDetails';
 import Navbar from './Component/Navbar';
-import { SplitNavItems } from './Component/UserProfile';
 import { useState } from 'react';
-import Footer from './Component/Footer';
+import { Stack } from '@fluentui/react';
 function App() {
 
   const [apiEndpoint, setApiEndpoint] = useState('')
   const [searchValue, setSearchValue] = useState('')
+ 
   return (
+
     <BrowserRouter>
-      <div className="App">
-        <Navbar setApiEndpoint = {setApiEndpoint}  setSearchValue ={setSearchValue}  />
+      <Stack className="App">
+        <Navbar setApiEndpoint={setApiEndpoint} setSearchValue={setSearchValue} />
         <header className="App-header">
           <Routes>
             <Route path='/' element={<Home />}></Route>
             <Route path='/register' element={<Home />}></Route>
             <Route path='/login' element={<Login />} />
             <Route path='/user_details' element={<GetAllUser />}></Route>
-            <Route path='/all_user_details' element={<AllUserDetails apiEndpoint = {apiEndpoint}  searchValue={searchValue} />}></Route>
-            <Route path='/profile' element={<SplitNavItems />}></Route>
+            <Route path='/all_user_details' element={<AllUserDetails apiEndpoint={apiEndpoint} searchValue={searchValue} />}></Route>
           </Routes>
         </header>
-        {/* <Footer/> */}
-      </div>
+      </Stack>
     </BrowserRouter>
   );
 }

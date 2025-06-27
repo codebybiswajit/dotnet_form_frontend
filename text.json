@@ -1,0 +1,1143 @@
+[
+  {
+    "name": "Tanvi Deshmukh",
+    "phno": "9098123456",
+    "user_name": "tanvi_d",
+    "email": "tanvi@user.com",
+    "password": "Tanvi@321",
+    "confirmpassword": "Tanvi@321",
+    "dob": "2002-03-11",
+    "Qualified": [
+      {
+        "clgName": "Central Institute of Commerce",
+        "Degree": "B.Com.",
+        "year": 2023,
+        "percentage": "90"
+      }
+    ],
+    "role": "user",
+    "createdAt": "15-06-2025 13:31:31"
+  },
+  {
+    "name": "Deepak Saini",
+    "phno": "9011223344",
+    "user_name": "deepak_s",
+    "email": "deepak@user.com",
+    "password": "Deepak@678",
+    "confirmpassword": "Deepak@678",
+    "dob": "1998-07-23",
+    "Qualified": [
+      {
+        "clgName": "Vision Technology Institute",
+        "Degree": "BCA",
+        "year": 2020,
+        "percentage": "84"
+      }
+    ],
+    "role": "user",
+    "createdAt": "14-06-2025 15:25:25"
+  },
+  {
+    "name": "Neha Agarwal",
+    "phno": "9345019283",
+    "user_name": "neha_a",
+    "email": "neha@user.com",
+    "password": "Neha@234",
+    "confirmpassword": "Neha@234",
+    "dob": "2001-06-09",
+    "Qualified": [
+      {
+        "clgName": "Govt. College of Arts",
+        "Degree": "B.A.",
+        "year": 2022,
+        "percentage": "89"
+      }
+    ],
+    "role": "user",
+    "createdAt": "13-06-2025 08:08:08"
+  },
+  {
+    "name": "Manish Raj",
+    "phno": "9321654987",
+    "user_name": "manish_r",
+    "email": "manish@user.com",
+    "password": "Manish@111",
+    "confirmpassword": "Manish@111",
+    "dob": "2000-10-02",
+    "Qualified": [
+      {
+        "clgName": "Bright Minds University",
+        "Degree": "B.Tech.",
+        "year": 2021,
+        "percentage": "88"
+      }
+    ],
+    "role": "user",
+    "createdAt": "12-06-2025 10:10:50"
+  },
+  {
+    "name": "Ishita Pandey",
+    "phno": "9456231876",
+    "user_name": "ishita_p",
+    "email": "ishita@user.com",
+    "password": "Ishita@333",
+    "confirmpassword": "Ishita@333",
+    "dob": "2003-12-15",
+    "Qualified": [
+      {
+        "clgName": "Commerce Vision Academy",
+        "Degree": "B.Com.",
+        "year": 2025,
+        "percentage": "94"
+      }
+    ],
+    "role": "user",
+    "createdAt": "11-06-2025 11:45:30"
+  },
+  {
+    "name": "Vikram Thakur",
+    "phno": "9876012345",
+    "user_name": "vikram_t",
+    "email": "vikram@user.com",
+    "password": "Vikram@555",
+    "confirmpassword": "Vikram@555",
+    "dob": "1999-02-28",
+    "Qualified": [
+      {
+        "clgName": "National Institute of Tech",
+        "Degree": "M.Tech.",
+        "year": 2023,
+        "percentage": "86"
+      }
+    ],
+    "role": "user",
+    "createdAt": "10-06-2025 16:16:06"
+  },
+  {
+    "name": "Shruti Das",
+    "phno": "9321987654",
+    "user_name": "shruti_d",
+    "email": "shruti@user.com",
+    "password": "Shruti@999",
+    "confirmpassword": "Shruti@999",
+    "dob": "2000-01-20",
+    "Qualified": [
+      {
+        "clgName": "Modern Women's College",
+        "Degree": "B.Ed.",
+        "year": 2024,
+        "percentage": "91"
+      }
+    ],
+    "role": "user",
+    "createdAt": "09-06-2025 19:00:01"
+  },
+  {
+    "name": "Rajan Kapoor",
+    "phno": "9211345678",
+    "user_name": "rajan_k",
+    "email": "rajan@user.com",
+    "password": "Rajan@000",
+    "confirmpassword": "Rajan@000",
+    "dob": "1997-11-11",
+    "Qualified": [
+      {
+        "clgName": "Alpha Business School",
+        "Degree": "MBA",
+        "year": 2022,
+        "percentage": "85"
+      }
+    ],
+    "role": "user",
+    "createdAt": "08-06-2025 06:30:30"
+  },
+  {
+    "name": "Ananya Roy",
+    "phno": "9877000111",
+    "user_name": "ananya_r",
+    "email": "ananya@user.com",
+    "password": "Ananya@888",
+    "confirmpassword": "Ananya@888",
+    "dob": "2002-07-18",
+    "Qualified": [
+      {
+        "clgName": "Creative Arts Academy",
+        "Degree": "B.A.",
+        "year": 2024,
+        "percentage": "93"
+      }
+    ],
+    "role": "user",
+    "createdAt": "07-06-2025 22:22:22"
+  },
+  {
+    "name": "Saurabh Jain",
+    "phno": "9966332211",
+    "user_name": "saurabh_j",
+    "email": "saurabh@user.com",
+    "password": "Saurabh@112",
+    "confirmpassword": "Saurabh@112",
+    "dob": "1998-05-17",
+    "Qualified": [
+      {
+        "clgName": "Techie World University",
+        "Degree": "B.Sc.",
+        "year": 2020,
+        "percentage": "89"
+      }
+    ],
+    "role": "user",
+    "createdAt": "06-06-2025 23:03:04"
+  },
+  {
+    "name": "Rahul Sharma",
+    "phno": "9123456781",
+    "user_name": "rahul_s",
+    "email": "rahul@user.com",
+    "password": "Rahul@321",
+    "confirmpassword": "Rahul@321",
+    "dob": "2000-05-12",
+    "Qualified": [
+      {
+        "clgName": "Symbiosis College",
+        "Degree": "B.Sc.",
+        "year": 2022,
+        "percentage": "88"
+      }
+    ],
+    "role": "user",
+    "createdAt": "25-06-2025 09:15:00"
+  },
+  {
+    "name": "Sneha Verma",
+    "phno": "9988776655",
+    "user_name": "sneha_v",
+    "email": "sneha@user.com",
+    "password": "Sneha@456",
+    "confirmpassword": "Sneha@456",
+    "dob": "2001-11-03",
+    "Qualified": [
+      {
+        "clgName": "National Commerce Institute",
+        "Degree": "B.Com.",
+        "year": 2023,
+        "percentage": "91"
+      }
+    ],
+    "role": "user",
+    "createdAt": "24-06-2025 10:10:10"
+  },
+  {
+    "name": "Amit Rathi",
+    "phno": "9876543211",
+    "user_name": "amit_r",
+    "email": "amit@user.com",
+    "password": "Amit@789",
+    "confirmpassword": "Amit@789",
+    "dob": "1999-08-20",
+    "Qualified": [
+      {
+        "clgName": "Techno India College",
+        "Degree": "B.Tech.",
+        "year": 2021,
+        "percentage": "87"
+      }
+    ],
+    "role": "user",
+    "createdAt": "23-06-2025 08:30:30"
+  },
+  {
+    "name": "Priya Mehta",
+    "phno": "9090909090",
+    "user_name": "priya_m",
+    "email": "priya@user.com",
+    "password": "Priya@234",
+    "confirmpassword": "Priya@234",
+    "dob": "2003-02-14",
+    "Qualified": [
+      {
+        "clgName": "St. Xavier's Institute",
+        "Degree": "B.A.",
+        "year": 2025,
+        "percentage": "93"
+      }
+    ],
+    "role": "user",
+    "createdAt": "22-06-2025 14:22:22"
+  },
+  {
+    "name": "Kunal Joshi",
+    "phno": "9988998899",
+    "user_name": "kunal_j",
+    "email": "kunal@user.com",
+    "password": "Kunal@567",
+    "confirmpassword": "Kunal@567",
+    "dob": "2001-09-17",
+    "Qualified": [
+      {
+        "clgName": "Global Business School",
+        "Degree": "MBA",
+        "year": 2025,
+        "percentage": "89"
+      }
+    ],
+    "role": "user",
+    "createdAt": "21-06-2025 11:11:11"
+  },
+  {
+    "name": "Divya Rai",
+    "phno": "9765432190",
+    "user_name": "divya_r",
+    "email": "divya@user.com",
+    "password": "Divya@123",
+    "confirmpassword": "Divya@123",
+    "dob": "2002-04-25",
+    "Qualified": [
+      {
+        "clgName": "City Arts College",
+        "Degree": "B.A.",
+        "year": 2024,
+        "percentage": "90"
+      }
+    ],
+    "role": "user",
+    "createdAt": "20-06-2025 12:12:12"
+  },
+  {
+    "name": "Rohit Kumar",
+    "phno": "9856741230",
+    "user_name": "rohit_k",
+    "email": "rohit@user.com",
+    "password": "Rohit@654",
+    "confirmpassword": "Rohit@654",
+    "dob": "2000-12-31",
+    "Qualified": [
+      {
+        "clgName": "Indian School of Management",
+        "Degree": "BBA",
+        "year": 2023,
+        "percentage": "86"
+      }
+    ],
+    "role": "user",
+    "createdAt": "19-06-2025 16:16:16"
+  },
+  {
+    "name": "Megha Tiwari",
+    "phno": "9922112233",
+    "user_name": "megha_t",
+    "email": "megha@user.com",
+    "password": "Megha@456",
+    "confirmpassword": "Megha@456",
+    "dob": "2003-01-05",
+    "Qualified": [
+      {
+        "clgName": "Modern Science Academy",
+        "Degree": "B.Sc.",
+        "year": 2024,
+        "percentage": "92"
+      }
+    ],
+    "role": "user",
+    "createdAt": "18-06-2025 07:07:07"
+  },
+  {
+    "name": "Aditya Nair",
+    "phno": "9666554433",
+    "user_name": "aditya_n",
+    "email": "aditya@user.com",
+    "password": "Aditya@321",
+    "confirmpassword": "Aditya@321",
+    "dob": "2001-07-07",
+    "Qualified": [
+      {
+        "clgName": "Bright Future College",
+        "Degree": "B.Com.",
+        "year": 2023,
+        "percentage": "85"
+      }
+    ],
+    "role": "user",
+    "createdAt": "17-06-2025 18:18:18"
+  },
+  {
+    "name": "Nikita Sinha",
+    "phno": "9001122334",
+    "user_name": "nikita_s",
+    "email": "nikita@user.com",
+    "password": "Nikita@789",
+    "confirmpassword": "Nikita@789",
+    "dob": "2000-10-10",
+    "Qualified": [
+      {
+        "clgName": "Eastern Commerce Institute",
+        "Degree": "M.Com.",
+        "year": 2025,
+        "percentage": "95"
+      }
+    ],
+    "role": "user",
+    "createdAt": "16-06-2025 05:05:05"
+  },
+
+  {
+    "name": "Ayesha Khan",
+    "phno": "9091909190",
+    "user_name": "ayesha_k",
+    "email": "ayesha@user.com",
+    "password": "Ayesha@123",
+    "confirmpassword": "Ayesha@123",
+    "dob": "2002-01-22",
+    "Qualified": [
+      {
+        "clgName": "Greenfield Commerce College",
+        "Degree": "B.Com.",
+        "year": 2024,
+        "percentage": "92"
+      }
+    ],
+    "role": "user",
+    "createdAt": "05-06-2025 09:00:09"
+  },
+  {
+    "name": "Yash Malhotra",
+    "phno": "9888001122",
+    "user_name": "yash_m",
+    "email": "yash@user.com",
+    "password": "Yash@456",
+    "confirmpassword": "Yash@456",
+    "dob": "2001-05-29",
+    "Qualified": [
+      {
+        "clgName": "Trinity School of Business",
+        "Degree": "BBA",
+        "year": 2023,
+        "percentage": "89"
+      }
+    ],
+    "role": "user",
+    "createdAt": "04-06-2025 10:30:30"
+  },
+  {
+    "name": "Kritika Sharma",
+    "phno": "9333444555",
+    "user_name": "kritika_s",
+    "email": "kritika@user.com",
+    "password": "Kritika@789",
+    "confirmpassword": "Kritika@789",
+    "dob": "2000-09-13",
+    "Qualified": [
+      {
+        "clgName": "Lighthouse Institute of Arts",
+        "Degree": "B.A.",
+        "year": 2022,
+        "percentage": "90"
+      }
+    ],
+    "role": "user",
+    "createdAt": "03-06-2025 07:45:15"
+  },
+  {
+    "name": "Arjun Rao",
+    "phno": "9112233445",
+    "user_name": "arjun_r",
+    "email": "arjun@user.com",
+    "password": "Arjun@222",
+    "confirmpassword": "Arjun@222",
+    "dob": "1999-03-06",
+    "Qualified": [
+      {
+        "clgName": "North Valley Institute",
+        "Degree": "B.Tech.",
+        "year": 2021,
+        "percentage": "85"
+      }
+    ],
+    "role": "user",
+    "createdAt": "02-06-2025 13:13:00"
+  },
+  {
+    "name": "Pooja Batra",
+    "phno": "9445566778",
+    "user_name": "pooja_b",
+    "email": "pooja@user.com",
+    "password": "Pooja@777",
+    "confirmpassword": "Pooja@777",
+    "dob": "2003-08-08",
+    "Qualified": [
+      {
+        "clgName": "Royal College of Commerce",
+        "Degree": "B.Com.",
+        "year": 2025,
+        "percentage": "93"
+      }
+    ],
+    "role": "user",
+    "createdAt": "01-06-2025 08:55:55"
+  },
+  {
+    "name": "Siddharth Kapoor",
+    "phno": "9011998877",
+    "user_name": "siddharth_k",
+    "email": "siddharth@user.com",
+    "password": "Siddharth@111",
+    "confirmpassword": "Siddharth@111",
+    "dob": "1998-06-21",
+    "Qualified": [
+      {
+        "clgName": "Urban Tech University",
+        "Degree": "MCA",
+        "year": 2022,
+        "percentage": "88"
+      }
+    ],
+    "role": "user",
+    "createdAt": "31-05-2025 12:12:12"
+  },
+  {
+    "name": "Sanya Dutta",
+    "phno": "9765123045",
+    "user_name": "sanya_d",
+    "email": "sanya@user.com",
+    "password": "Sanya@555",
+    "confirmpassword": "Sanya@555",
+    "dob": "2001-04-30",
+    "Qualified": [
+      {
+        "clgName": "Starlight Women's College",
+        "Degree": "B.Sc.",
+        "year": 2023,
+        "percentage": "87"
+      }
+    ],
+    "role": "user",
+    "createdAt": "30-05-2025 05:45:45"
+  },
+  {
+    "name": "Ravi Yadav",
+    "phno": "9871234560",
+    "user_name": "ravi_y",
+    "email": "ravi@user.com",
+    "password": "Ravi@444",
+    "confirmpassword": "Ravi@444",
+    "dob": "2000-11-11",
+    "Qualified": [
+      {
+        "clgName": "Bharat Engineering College",
+        "Degree": "B.Tech.",
+        "year": 2020,
+        "percentage": "83"
+      }
+    ],
+    "role": "user",
+    "createdAt": "29-05-2025 14:44:44"
+  },
+  {
+    "name": "Naina Joshi",
+    "phno": "9888777666",
+    "user_name": "naina_j",
+    "email": "naina@user.com",
+    "password": "Naina@666",
+    "confirmpassword": "Naina@666",
+    "dob": "2002-12-12",
+    "Qualified": [
+      {
+        "clgName": "Eastern School of Commerce",
+        "Degree": "B.Com.",
+        "year": 2024,
+        "percentage": "91"
+      }
+    ],
+    "role": "user",
+    "createdAt": "28-05-2025 16:16:16"
+  },
+  {
+    "name": "Harsh Mehra",
+    "phno": "9555443322",
+    "user_name": "harsh_m",
+    "email": "harsh@user.com",
+    "password": "Harsh@333",
+    "confirmpassword": "Harsh@333",
+    "dob": "1997-09-09",
+    "Qualified": [
+      {
+        "clgName": "Advance Institute of Tech",
+        "Degree": "BCA",
+        "year": 2019,
+        "percentage": "86"
+      }
+    ],
+    "role": "user",
+    "createdAt": "27-05-2025 11:00:00"
+  },
+  {
+    "name": "Ira Sen",
+    "phno": "9009988776",
+    "user_name": "ira_s",
+    "email": "ira@user.com",
+    "password": "Ira@123",
+    "confirmpassword": "Ira@123",
+    "dob": "2001-03-03",
+    "Qualified": [
+      {
+        "clgName": "Eastern Finance College",
+        "Degree": "B.Com.",
+        "year": 2023,
+        "percentage": "90"
+      }
+    ],
+    "role": "user",
+    "createdAt": "26-05-2025 07:45:00"
+  },
+  {
+    "name": "Kabir Anand",
+    "phno": "9123456712",
+    "user_name": "kabir_a",
+    "email": "kabir@user.com",
+    "password": "Kabir@321",
+    "confirmpassword": "Kabir@321",
+    "dob": "2000-06-14",
+    "Qualified": [
+      {
+        "clgName": "Global Business University",
+        "Degree": "MBA",
+        "year": 2022,
+        "percentage": "87"
+      }
+    ],
+    "role": "user",
+    "createdAt": "25-05-2025 06:30:15"
+  },
+  {
+    "name": "Tanya Bhatt",
+    "phno": "9845123678",
+    "user_name": "tanya_b",
+    "email": "tanya@user.com",
+    "password": "Tanya@789",
+    "confirmpassword": "Tanya@789",
+    "dob": "2002-10-25",
+    "Qualified": [
+      {
+        "clgName": "Arts and Culture Academy",
+        "Degree": "B.A.",
+        "year": 2024,
+        "percentage": "93"
+      }
+    ],
+    "role": "user",
+    "createdAt": "24-05-2025 10:20:10"
+  },
+  {
+    "name": "Rishi Nair",
+    "phno": "9765332211",
+    "user_name": "rishi_n",
+    "email": "rishi@user.com",
+    "password": "Rishi@456",
+    "confirmpassword": "Rishi@456",
+    "dob": "1999-04-08",
+    "Qualified": [
+      {
+        "clgName": "TechSquare College",
+        "Degree": "B.Sc.",
+        "year": 2021,
+        "percentage": "85"
+      }
+    ],
+    "role": "user",
+    "createdAt": "23-05-2025 12:12:12"
+  },
+  {
+    "name": "Aaradhya Chauhan",
+    "phno": "9898123450",
+    "user_name": "aaradhya_c",
+    "email": "aaradhya@user.com",
+    "password": "Aaradhya@999",
+    "confirmpassword": "Aaradhya@999",
+    "dob": "2003-09-17",
+    "Qualified": [
+      {
+        "clgName": "Commerce Beacon Institute",
+        "Degree": "B.Com.",
+        "year": 2025,
+        "percentage": "91"
+      }
+    ],
+    "role": "user",
+    "createdAt": "22-05-2025 14:00:00"
+  },
+  {
+    "name": "Nikhil Verma",
+    "phno": "9011445566",
+    "user_name": "nikhil_v",
+    "email": "nikhil@user.com",
+    "password": "Nikhil@222",
+    "confirmpassword": "Nikhil@222",
+    "dob": "1998-12-05",
+    "Qualified": [
+      {
+        "clgName": "Modern Tech University",
+        "Degree": "M.Tech.",
+        "year": 2022,
+        "percentage": "88"
+      }
+    ],
+    "role": "user",
+    "createdAt": "21-05-2025 11:45:30"
+  },
+  {
+    "name": "Simran Kaur",
+    "phno": "9100223344",
+    "user_name": "simran_k",
+    "email": "simran@user.com",
+    "password": "Simran@654",
+    "confirmpassword": "Simran@654",
+    "dob": "2000-07-12",
+    "Qualified": [
+      {
+        "clgName": "Arts Gateway College",
+        "Degree": "B.A.",
+        "year": 2023,
+        "percentage": "90"
+      }
+    ],
+    "role": "user",
+    "createdAt": "20-05-2025 15:30:45"
+  },
+  {
+    "name": "Zaid Sheikh",
+    "phno": "9088776655",
+    "user_name": "zaid_s",
+    "email": "zaid@user.com",
+    "password": "Zaid@123",
+    "confirmpassword": "Zaid@123",
+    "dob": "2001-01-01",
+    "Qualified": [
+      {
+        "clgName": "City Computer Institute",
+        "Degree": "BCA",
+        "year": 2022,
+        "percentage": "86"
+      }
+    ],
+    "role": "user",
+    "createdAt": "19-05-2025 18:18:18"
+  },
+  {
+    "name": "Palak Jain",
+    "phno": "9777554433",
+    "user_name": "palak_j",
+    "email": "palak@user.com",
+    "password": "Palak@321",
+    "confirmpassword": "Palak@321",
+    "dob": "2002-02-14",
+    "Qualified": [
+      {
+        "clgName": "Harmony School of Management",
+        "Degree": "BBA",
+        "year": 2023,
+        "percentage": "89"
+      }
+    ],
+    "role": "user",
+    "createdAt": "18-05-2025 09:29:29"
+  },
+  {
+    "name": "Ankit Mishra",
+    "phno": "9899001122",
+    "user_name": "ankit_m",
+    "email": "ankit@user.com",
+    "password": "Ankit@888",
+    "confirmpassword": "Ankit@888",
+    "dob": "1997-08-19",
+    "Qualified": [
+      {
+        "clgName": "Nova Science and Tech Institute",
+        "Degree": "B.Sc.",
+        "year": 2020,
+        "percentage": "84"
+      }
+    ],
+    "role": "user",
+    "createdAt": "17-05-2025 20:10:10"
+  },
+  {
+    "name": "Meera Ghosh",
+    "phno": "9823456789",
+    "user_name": "meera_g",
+    "email": "meera@user.com",
+    "password": "Meera@456",
+    "confirmpassword": "Meera@456",
+    "dob": "2001-05-10",
+    "Qualified": [
+      {
+        "clgName": "Heritage Business Academy",
+        "Degree": "B.Com.",
+        "year": 2023,
+        "percentage": "89"
+      }
+    ],
+    "role": "user",
+    "createdAt": "16-05-2025 08:30:00"
+  },
+  {
+    "name": "Alok Tiwari",
+    "phno": "9654321870",
+    "user_name": "alok_t",
+    "email": "alok@user.com",
+    "password": "Alok@789",
+    "confirmpassword": "Alok@789",
+    "dob": "1999-11-19",
+    "Qualified": [
+      {
+        "clgName": "Metro School of Management",
+        "Degree": "MBA",
+        "year": 2022,
+        "percentage": "86"
+      }
+    ],
+    "role": "user",
+    "createdAt": "15-05-2025 13:50:45"
+  },
+  {
+    "name": "Charvi Rawat",
+    "phno": "9123001122",
+    "user_name": "charvi_r",
+    "email": "charvi@user.com",
+    "password": "Charvi@123",
+    "confirmpassword": "Charvi@123",
+    "dob": "2002-07-15",
+    "Qualified": [
+      {
+        "clgName": "Starlight Institute",
+        "Degree": "B.A.",
+        "year": 2024,
+        "percentage": "92"
+      }
+    ],
+    "role": "user",
+    "createdAt": "14-05-2025 09:45:45"
+  },
+  {
+    "name": "Rajeev Mehra",
+    "phno": "9988554433",
+    "user_name": "rajeev_m",
+    "email": "rajeev@user.com",
+    "password": "Rajeev@654",
+    "confirmpassword": "Rajeev@654",
+    "dob": "1998-02-28",
+    "Qualified": [
+      {
+        "clgName": "Advance Tech Institute",
+        "Degree": "B.Sc.",
+        "year": 2020,
+        "percentage": "85"
+      }
+    ],
+    "role": "user",
+    "createdAt": "13-05-2025 17:17:17"
+  },
+  {
+    "name": "Trisha Menon",
+    "phno": "9345609871",
+    "user_name": "trisha_m",
+    "email": "trisha@user.com",
+    "password": "Trisha@321",
+    "confirmpassword": "Trisha@321",
+    "dob": "2003-06-20",
+    "Qualified": [
+      {
+        "clgName": "City College of Commerce",
+        "Degree": "B.Com.",
+        "year": 2025,
+        "percentage": "94"
+      }
+    ],
+    "role": "user",
+    "createdAt": "12-05-2025 07:07:07"
+  },
+  {
+    "name": "Anshul Rathi",
+    "phno": "9888112233",
+    "user_name": "anshul_r",
+    "email": "anshul@user.com",
+    "password": "Anshul@777",
+    "confirmpassword": "Anshul@777",
+    "dob": "2000-10-05",
+    "Qualified": [
+      {
+        "clgName": "Institute of Management Science",
+        "Degree": "BBA",
+        "year": 2023,
+        "percentage": "87"
+      }
+    ],
+    "role": "user",
+    "createdAt": "11-05-2025 12:30:12"
+  },
+  {
+    "name": "Nikita Thakur",
+    "phno": "9022445566",
+    "user_name": "nikita_t",
+    "email": "nikita@user.com",
+    "password": "Nikita@999",
+    "confirmpassword": "Nikita@999",
+    "dob": "2001-08-22",
+    "Qualified": [
+      {
+        "clgName": "Horizon Arts College",
+        "Degree": "B.A.",
+        "year": 2024,
+        "percentage": "91"
+      }
+    ],
+    "role": "user",
+    "createdAt": "10-05-2025 06:06:06"
+  },
+  {
+    "name": "Raghav Singh",
+    "phno": "9765432109",
+    "user_name": "raghav_s",
+    "email": "raghav@user.com",
+    "password": "Raghav@888",
+    "confirmpassword": "Raghav@888",
+    "dob": "1997-03-03",
+    "Qualified": [
+      {
+        "clgName": "Capital University of Tech",
+        "Degree": "B.Tech.",
+        "year": 2019,
+        "percentage": "84"
+      }
+    ],
+    "role": "user",
+    "createdAt": "09-05-2025 11:15:45"
+  },
+  {
+    "name": "Tanisha Patel",
+    "phno": "9443322110",
+    "user_name": "tanisha_p",
+    "email": "tanisha@user.com",
+    "password": "Tanisha@222",
+    "confirmpassword": "Tanisha@222",
+    "dob": "2002-12-01",
+    "Qualified": [
+      {
+        "clgName": "Elegant Academy",
+        "Degree": "B.Sc.",
+        "year": 2024,
+        "percentage": "89"
+      }
+    ],
+    "role": "user",
+    "createdAt": "08-05-2025 14:14:14"
+  },
+  {
+    "name": "Karan Das",
+    "phno": "9111223344",
+    "user_name": "karan_d",
+    "email": "karan@user.com",
+    "password": "Karan@111",
+    "confirmpassword": "Karan@111",
+    "dob": "1999-09-15",
+    "Qualified": [
+      {
+        "clgName": "Summit Business College",
+        "Degree": "BBA",
+        "year": 2021,
+        "percentage": "88"
+      }
+    ],
+    "role": "user",
+    "createdAt": "07-05-2025 16:50:00"
+  },
+  {
+    "name": "Rehan Malik",
+    "phno": "9090111222",
+    "user_name": "rehan_m",
+    "email": "rehan@user.com",
+    "password": "Rehan@123",
+    "confirmpassword": "Rehan@123",
+    "dob": "2001-01-10",
+    "Qualified": [
+      {
+        "clgName": "Silver Oak Commerce College",
+        "Degree": "B.Com.",
+        "year": 2023,
+        "percentage": "88"
+      }
+    ],
+    "role": "user",
+    "createdAt": "06-05-2025 09:45:45"
+  },
+  {
+    "name": "Aashi Kapoor",
+    "phno": "9223344556",
+    "user_name": "aashi_k",
+    "email": "aashi@user.com",
+    "password": "Aashi@456",
+    "confirmpassword": "Aashi@456",
+    "dob": "2002-06-18",
+    "Qualified": [
+      {
+        "clgName": "New Age Institute",
+        "Degree": "B.Sc.",
+        "year": 2024,
+        "percentage": "91"
+      }
+    ],
+    "role": "user",
+    "createdAt": "05-05-2025 07:30:00"
+  },
+  {
+    "name": "Ritika Saxena",
+    "phno": "9333444555",
+    "user_name": "ritika_s",
+    "email": "ritika@user.com",
+    "password": "Ritika@789",
+    "confirmpassword": "Ritika@789",
+    "dob": "2003-03-12",
+    "Qualified": [
+      {
+        "clgName": "City Women's University",
+        "Degree": "B.A.",
+        "year": 2025,
+        "percentage": "93"
+      }
+    ],
+    "role": "user",
+    "createdAt": "04-05-2025 10:10:10"
+  },
+  {
+    "name": "Dev Yadav",
+    "phno": "9888123456",
+    "user_name": "dev_y",
+    "email": "dev@user.com",
+    "password": "Dev@456",
+    "confirmpassword": "Dev@456",
+    "dob": "1999-09-09",
+    "Qualified": [
+      {
+        "clgName": "National Engineering School",
+        "Degree": "B.Tech.",
+        "year": 2021,
+        "percentage": "87"
+      }
+    ],
+    "role": "user",
+    "createdAt": "03-05-2025 13:20:35"
+  },
+  {
+    "name": "Pallavi Singh",
+    "phno": "9011002233",
+    "user_name": "pallavi_s",
+    "email": "pallavi@user.com",
+    "password": "Pallavi@222",
+    "confirmpassword": "Pallavi@222",
+    "dob": "2001-02-05",
+    "Qualified": [
+      {
+        "clgName": "International Business College",
+        "Degree": "MBA",
+        "year": 2023,
+        "percentage": "90"
+      }
+    ],
+    "role": "user",
+    "createdAt": "02-05-2025 11:11:11"
+  },
+  {
+    "name": "Farhan Qureshi",
+    "phno": "9867543210",
+    "user_name": "farhan_q",
+    "email": "farhan@user.com",
+    "password": "Farhan@321",
+    "confirmpassword": "Farhan@321",
+    "dob": "1998-12-25",
+    "Qualified": [
+      {
+        "clgName": "Bright Future University",
+        "Degree": "MCA",
+        "year": 2022,
+        "percentage": "85"
+      }
+    ],
+    "role": "user",
+    "createdAt": "01-05-2025 08:08:08"
+  },
+  {
+    "name": "Sanika Kulkarni",
+    "phno": "9077001122",
+    "user_name": "sanika_k",
+    "email": "sanika@user.com",
+    "password": "Sanika@555",
+    "confirmpassword": "Sanika@555",
+    "dob": "2003-04-04",
+    "Qualified": [
+      {
+        "clgName": "Metro Commerce Institute",
+        "Degree": "B.Com.",
+        "year": 2025,
+        "percentage": "94"
+      }
+    ],
+    "role": "user",
+    "createdAt": "30-04-2025 06:55:55"
+  },
+  {
+    "name": "Aman Sood",
+    "phno": "9543210876",
+    "user_name": "aman_s",
+    "email": "aman@user.com",
+    "password": "Aman@111",
+    "confirmpassword": "Aman@111",
+    "dob": "2000-11-11",
+    "Qualified": [
+      {
+        "clgName": "Pacific Science Institute",
+        "Degree": "B.Sc.",
+        "year": 2022,
+        "percentage": "88"
+      }
+    ],
+    "role": "user",
+    "createdAt": "29-04-2025 12:00:00"
+  },
+  {
+    "name": "Tara Joshi",
+    "phno": "9988770011",
+    "user_name": "tara_j",
+    "email": "tara@user.com",
+    "password": "Tara@999",
+    "confirmpassword": "Tara@999",
+    "dob": "2002-08-30",
+    "Qualified": [
+      {
+        "clgName": "Women’s Development College",
+        "Degree": "B.A.",
+        "year": 2024,
+        "percentage": "91"
+      }
+    ],
+    "role": "user",
+    "createdAt": "28-04-2025 14:44:44"
+  },
+  {
+    "name": "Varun Sehgal",
+    "phno": "9445566778",
+    "user_name": "varun_s",
+    "email": "varun@user.com",
+    "password": "Varun@333",
+    "confirmpassword": "Varun@333",
+    "dob": "1997-07-07",
+    "Qualified": [
+      {
+        "clgName": "Omega Tech University",
+        "Degree": "BCA",
+        "year": 2020,
+        "percentage": "86"
+      }
+    ],
+    "role": "user",
+    "createdAt": "27-04-2025 05:05:05"
+  }
+]

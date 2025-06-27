@@ -43,15 +43,14 @@ export default function Navbar({ setSearchValue, setApiEndpoint }: UserDetailsPr
         background: '#f3f2f1',
         width: '100%',
         maxWidth: "100%",
-        height: "auto",
+        height: "6.5vh",
         margin: "auto",
         padding: "24px",
         backdropFilter: "blur(5px)",
-        backgroundColor: "rgba(0, 0, 0, 0.58)",
+        backgroundColor: "#6c757d",
         boxShadow: "0 8px 32px rgba(0,0,0,0.2)",
       }
     }}>
-      <Button onClick={() => { navigate('/user_details') }} className='btn bg-primary rounded-4 p-2 text-white gap-2'><PersonCircleRegular /> Profile</Button>
       <Stack grow styles={{
         root: {
           width: '60%',
@@ -68,45 +67,51 @@ export default function Navbar({ setSearchValue, setApiEndpoint }: UserDetailsPr
         </Stack>
       ) : role === 'admin' ? (
         <Stack horizontal horizontalAlign="end" tokens={{ childrenGap: 10 }}>
+          <Button onClick={() => { navigate('/user_details') }} className='btn bg-primary rounded-4 p-2 text-white gap-2'><PersonCircleRegular /> Profile</Button>
           <Button onClick={() => { navigate('/all_user_details') }} className='btn bg-primary rounded-4 p-1 text-white gap-2'> <AppsListDetailRegular />View List</Button>
           <TextField
             value={nameFilter}
+            className='p-1'
             placeholder='search by name'
             onChange={(_, val) => setNameFilter(val || '')}
           />
-          <DefaultButton
+          {/* <DefaultButton
             text="Sort By Desecending"
             styles={{
               root: {
-                padding: '4px 16px',
-                minHeight: '32px',
+                marginTop : ".2em",
+                
+                // minHeight: '32px',
                 height: '32px',
-                fontSize: '0.95em',
+                fontSize: 'em',
                 borderRadius: '6px',
                 background: '#1976d2',
                 color: 'white',
                 border: 'none',
               },
+
               rootHovered: {
                 background: '#1565c0',
                 color: 'white',
               }
             }}
+            className='p-3'
             onClick={() => { setApiEndpoint('http://localhost:5028/api/UserService/get-all-user/descending') }}
-          />
+          /> */}
           <Dropdown
             placeholder="Select Filter"
             style={{
               minWidth: 160,
+              marginTop: ".2 em",
               backgroundColor: "white",
               border: "2px solid #1976d2",
               borderRadius: "6px",
-              height: "32px",
-              padding: "0 8px",
+              // height: "32px",
               fontSize: "0.7em",
               display: "flex",
               alignItems: "center",
             }}
+            className='p-2'
             listbox={{
               style: {
                 fontSize: ".95em",
@@ -120,10 +125,10 @@ export default function Navbar({ setSearchValue, setApiEndpoint }: UserDetailsPr
                 Select
               </Option>
               <Option value="http://localhost:5028/api/UserService/get-all-user/ascending" style={{ borderBottom: ".1rem solid", fontSize: ".8em" }}>
-                Sort By Name (Ascending)
+                Sort By Name (Asc)
               </Option>
               <Option value="http://localhost:5028/api/UserService/get-all-user/descending" style={{ borderBottom: ".1rem solid", fontSize: ".8em" }}>
-                Sort By Name (Descending)
+                Sort By Name (Desc)
               </Option>
               <Option value="http://localhost:5028/api/UserService/get-all-user/created/ascending" style={{ fontSize: ".8em" }}>
                 Sort by Date
@@ -131,10 +136,10 @@ export default function Navbar({ setSearchValue, setApiEndpoint }: UserDetailsPr
             </Stack>
           </Dropdown>
 
-          <Button onClick={logout} title='Signout' className='bg-primary  rounded-5 text-white' style={{
-            padding: '4px 16px',
-            minHeight: '32px',
-            height: '32px',
+          <Button onClick={logout} title='Signout' className='bg-primary  rounded-5 text-white p-1' style={{
+
+            // minHeight: '32px',
+            // height: '32px',
             fontSize: '0.95em',
             borderRadius: '6px',
             color: 'white',
@@ -146,7 +151,8 @@ export default function Navbar({ setSearchValue, setApiEndpoint }: UserDetailsPr
         </Stack>
       ) : (
         <Stack horizontal horizontalAlign='center' tokens={{ childrenGap: 20 }}>
-          <Button onClick={logout} title='Signout' className='bg-secondary  rounded-5 text-white p-1'>
+          <Button onClick={() => { navigate('/user_details') }} className='btn bg-primary rounded-4 p-2 text-white gap-2'><PersonCircleRegular /> Profile</Button>
+          <Button onClick={logout} title='Signout' className='bg-primary  rounded-5 text-white p-1'>
             <SignOutRegular fontSize={"20px"} />
           </Button>
         </Stack>

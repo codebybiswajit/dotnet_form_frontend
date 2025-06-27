@@ -46,9 +46,12 @@ export default function UserDetails() {
     const [errors, setErrors] = useState<Partial<Record<keyof User, string>>>({});
     const [isEditing, setIsEditing] = useState(false);
     const navigate = useNavigate()
+    const [isloggedIn, setIsLoggedin] = useState(false)
     useEffect(() => {
         fetchUserData();
+        setIsLoggedin(localStorage.getItem('isloggedIn') === "true")
     }, []);
+
 
     const fetchUserData = () => {
         axios.get('http://localhost:5028/api/UserService/me', { withCredentials: true })
@@ -108,9 +111,10 @@ export default function UserDetails() {
 
     return (
         <>
-            <Stack horizontal horizontalAlign='center' className='row container'
+            {isloggedIn && <Stack horizontal horizontalAlign='center' className='row container mt-5'
                 style={{
                     margin: 'auto',
+                    width : "100%"
                     // padding: '20px',
                     // border: '1px solid #ccc',
                     // backgroundColor: 'rgba(255,255,255,0.8)',
@@ -120,11 +124,13 @@ export default function UserDetails() {
                 }}
             >
 
+
                 <Stack className="col-md-4">
                     <Stack styles={{
                         root: {
-                            width: '350px',
-                            maxHeight: "650px",
+                            // width: '350px',
+                            // maxHeight: "650px",
+                            width :"70%" ,
                             margin: '5em auto',
                             padding: '20px',
                             border: '1px solid #ccc',
@@ -165,7 +171,7 @@ export default function UserDetails() {
                             </Stack>
 
                             <Stack horizontal horizontalAlign='center' tokens={{ childrenGap: 10 }} style={{
-                                marginTop: "16em"
+                                marginTop: "8em"
                             }}>
                                 <Button
                                     onClick={() => {
@@ -195,7 +201,7 @@ export default function UserDetails() {
 
                     <Stack styles={{
                         root: {
-                            width: '600px',
+                            width: '100%',
                             margin: '5em auto',
                             padding: '20px',
                             border: '1px solid #ccc',
@@ -247,14 +253,14 @@ export default function UserDetails() {
                                     </StackItem>
                                 ))}
 
-                                <Stack horizontalAlign='start' style={{ marginTop: ".1em", padding: ".5em" }}>
+                                {/* <Stack horizontalAlign='start' style={{ marginTop: ".1em", padding: ".5em" }}>
                                     User Name:
                                     <Text>{userData.userName}</Text>
                                 </Stack>
                                 <Stack horizontalAlign='start' style={{ marginTop: ".1em", padding: ".5em" }}>
                                     Role:
                                     <Text>{userData.role}</Text>
-                                </Stack>
+                                </Stack> */}
 
                                 <Stack style={{ marginTop: "1em" }}>
                                     <p><strong>Qualifications:</strong> (For now you can't change qualification)</p>
@@ -277,7 +283,7 @@ export default function UserDetails() {
                     </Stack>
                 </Stack>
 
-            </Stack>
+            </Stack>}
         </>
 
     );

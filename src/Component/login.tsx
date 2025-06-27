@@ -54,7 +54,7 @@ export default function Login() {
       }
     )
       .then(response => {
-        console.log('Login successful:', response.data);
+        console.log('Login successful:', response.data.user);
         alert(response.data.message);
         setUsername('');
         setPassword('');
