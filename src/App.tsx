@@ -18,13 +18,13 @@ function App() {
     <BrowserRouter>
       <Stack className="App">
         <Navbar setApiEndpoint={setApiEndpoint} setSearchValue={setSearchValue} />
-        <header className="App-header">
+        <header className="App-header"  style={{padding:50}}>
           <Routes>
-            <Route path='/' element={<Home />}></Route>
+            <Route path='/' element={<Home /> }> </Route>
             <Route path='/register' element={<Home />}></Route>
             <Route path='/login' element={<Login />} />
             <Route path='/user_details' element={<GetAllUser />}></Route>
-            <Route path='/all_user_details' element={<AllUserDetails apiEndpoint={apiEndpoint} searchValue={searchValue} />}></Route>
+            <Route path='/all_user_details' element={<AllUserDetails  searchValue={searchValue} />}></Route>
           </Routes>
         </header>
       </Stack>

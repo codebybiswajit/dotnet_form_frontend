@@ -1,18 +1,36 @@
 import React, { useEffect, useState } from 'react';
 import { Stack, DefaultButton, PrimaryButton, TextField, } from '@fluentui/react';
 import { AppsListDetailRegular, PersonCircleRegular, SignOutRegular } from '@fluentui/react-icons';
-import { Button, Dropdown, Option, } from '@fluentui/react-components';
+import { Button, Popover, PopoverSurface, PopoverTrigger } from '@fluentui/react-components';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import type { DropdownProps } from '@fluentui/react-components';
+import { makeStyles } from "@fluentui/react-components"; 
+
+
 type UserDetailsProps = DropdownProps & {
   setSearchValue: React.Dispatch<React.SetStateAction<string>>;
   setApiEndpoint: React.Dispatch<React.SetStateAction<string>>;
-}
+};
+
+
+
+const useStyles = makeStyles({
+  roundedInput: {
+    borderRadius: "2em",
+    width: "300px",
+    minWidth: "120px",
+    // maxWidth: "240px",
+    fontSize: "1em",
+    padding: "4px 12px",
+  },
+});
+
+
 export default function Navbar({ setSearchValue, setApiEndpoint }: UserDetailsProps) {
   const [role, setRole] = useState('');
   const [nameFilter, setNameFilter] = useState("")
-
+  const styles =  useStyles()
   const navigate = useNavigate();
   const [isloggedIn, setIsLoggedin] = useState(false)
   useEffect(() => {
@@ -47,7 +65,7 @@ export default function Navbar({ setSearchValue, setApiEndpoint }: UserDetailsPr
         margin: "auto",
         padding: "24px",
         backdropFilter: "blur(5px)",
-        backgroundColor: "#6c757d",
+        backgroundColor: "blue",
         boxShadow: "0 8px 32px rgba(0,0,0,0.2)",
       }
     }}>
@@ -67,94 +85,48 @@ export default function Navbar({ setSearchValue, setApiEndpoint }: UserDetailsPr
         </Stack>
       ) : role === 'admin' ? (
         <Stack horizontal horizontalAlign="end" tokens={{ childrenGap: 10 }}>
-          <Button onClick={() => { navigate('/user_details') }} className='btn bg-primary rounded-4 p-2 text-white gap-2'><PersonCircleRegular /> Profile</Button>
-          <Button onClick={() => { navigate('/all_user_details') }} className='btn bg-primary rounded-4 p-1 text-white gap-2'> <AppsListDetailRegular />View List</Button>
           <TextField
             value={nameFilter}
-            className='p-1'
+            className={styles.roundedInput}
             placeholder='search by name'
             onChange={(_, val) => setNameFilter(val || '')}
           />
-          {/* <DefaultButton
-            text="Sort By Desecending"
-            styles={{
-              root: {
-                marginTop : ".2em",
-                
-                // minHeight: '32px',
-                height: '32px',
-                fontSize: 'em',
-                borderRadius: '6px',
-                background: '#1976d2',
-                color: 'white',
-                border: 'none',
-              },
-
-              rootHovered: {
-                background: '#1565c0',
-                color: 'white',
-              }
-            }}
-            className='p-3'
-            onClick={() => { setApiEndpoint('http://localhost:5028/api/UserService/get-all-user/descending') }}
-          /> */}
-          <Dropdown
-            placeholder="Select Filter"
-            style={{
-              minWidth: 160,
-              marginTop: ".2 em",
-              backgroundColor: "white",
-              border: "2px solid #1976d2",
-              borderRadius: "6px",
-              // height: "32px",
-              fontSize: "0.7em",
-              display: "flex",
-              alignItems: "center",
-            }}
-            className='p-2'
-            listbox={{
-              style: {
-                fontSize: ".95em",
-                borderRadius: "8px",
-              }
-            }}
-            onOptionSelect={(_, data) => setApiEndpoint(data.optionValue as string)}
-          >
-            <Stack style={{ backgroundColor: "white", color: "black", border: "2px solid #1976d2", borderRadius: "1em" }} aria-disabled="true">
-              <Option value="http://localhost:5028/api/UserService/get-all-user" style={{ borderBottom: ".1rem solid", fontSize: ".8em" }}>
-                Select
-              </Option>
-              <Option value="http://localhost:5028/api/UserService/get-all-user/ascending" style={{ borderBottom: ".1rem solid", fontSize: ".8em" }}>
-                Sort By Name (Asc)
-              </Option>
-              <Option value="http://localhost:5028/api/UserService/get-all-user/descending" style={{ borderBottom: ".1rem solid", fontSize: ".8em" }}>
-                Sort By Name (Desc)
-              </Option>
-              <Option value="http://localhost:5028/api/UserService/get-all-user/created/ascending" style={{ fontSize: ".8em" }}>
-                Sort by Date
-              </Option>
-            </Stack>
-          </Dropdown>
-
-          <Button onClick={logout} title='Signout' className='bg-primary  rounded-5 text-white p-1' style={{
-
-            // minHeight: '32px',
-            // height: '32px',
-            fontSize: '0.95em',
-            borderRadius: '6px',
-            color: 'white',
-            border: 'none',
-
-          }}>
-            <SignOutRegular fontSize={"20px"} />
+          <Button onClick={() => { navigate('/all_user_details') }} className='btn rounded-4 p-1 text-white gap-2'>
+            <AppsListDetailRegular />View List
           </Button>
+          <Popover positioning="below-end" withArrow>
+            <PopoverTrigger disableButtonEnhancement>
+              <Button appearance="subtle" icon={<PersonCircleRegular fontSize={"24px"} />} style={{ borderRadius: "50%", minWidth: 40, minHeight: 40, padding: 0, background: "#1976d2", color: "white" }} />
+            </PopoverTrigger>
+            <PopoverSurface tabIndex={-1} style={{ minWidth: 120, padding: 0 }}>
+              <Stack tokens={{ childrenGap: 0 }} style={{backgroundColor  :"white"}}>
+                <Button appearance="subtle" style={{ width: "100%", justifyContent: "flex-start", borderRadius: 0, padding: "10px 16px" }} onClick={() => navigate('/user_details')}>
+                  <PersonCircleRegular style={{ marginRight: 8 }} /> Profile
+                </Button>
+                <Button appearance="subtle" style={{ width: "100%", justifyContent: "flex-start", borderRadius: 0, padding: "10px 16px" }} onClick={logout}>
+                  <SignOutRegular style={{ marginRight: 8 }} /> Logout
+                </Button>
+              </Stack>
+            </PopoverSurface>
+          </Popover>
         </Stack>
       ) : (
         <Stack horizontal horizontalAlign='center' tokens={{ childrenGap: 20 }}>
-          <Button onClick={() => { navigate('/user_details') }} className='btn bg-primary rounded-4 p-2 text-white gap-2'><PersonCircleRegular /> Profile</Button>
-          <Button onClick={logout} title='Signout' className='bg-primary  rounded-5 text-white p-1'>
-            <SignOutRegular fontSize={"20px"} />
-          </Button>
+           <Popover positioning="below-end" withArrow>
+            <PopoverTrigger disableButtonEnhancement>
+              <Button appearance="subtle" icon={<PersonCircleRegular fontSize={"24px"} />} style={{ borderRadius: "50%", minWidth: 40, minHeight: 40, padding: 0, background: "#1976d2", color: "white" }} />
+            </PopoverTrigger>
+            <PopoverSurface tabIndex={-1} style={{ minWidth: 120, padding: 0 }}>
+              <Stack tokens={{ childrenGap: 0 }} style={{backgroundColor  :"white"}}>
+                <Button appearance="subtle" style={{ width: "100%", justifyContent: "flex-start", borderRadius: 0, padding: "10px 16px" }} onClick={() => navigate('/user_details')}>
+                  <PersonCircleRegular style={{ marginRight: 8 }} /> Profile
+                </Button>
+                <Button appearance="subtle" style={{ width: "100%", justifyContent: "flex-start", borderRadius: 0, padding: "10px 16px" }} onClick={logout}>
+                  <SignOutRegular style={{ marginRight: 8 }} /> Logout
+                </Button>
+              </Stack>
+            </PopoverSurface>
+          </Popover>
         </Stack>
       )
       }

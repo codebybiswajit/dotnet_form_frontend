@@ -114,16 +114,10 @@ export default function UserDetails() {
 
     return (
         <>
-            {isloggedIn && <Stack horizontal horizontalAlign='center' className='row container mt-5'
+            {isloggedIn && <Stack horizontal horizontalAlign='center' className='row container '
                 style={{
                     margin: 'auto',
                     width: "100%"
-                    // padding: '20px',
-                    // border: '1px solid #ccc',
-                    // backgroundColor: 'rgba(255,255,255,0.8)',
-                    // backdropFilter: "blur(5px)",
-                    // borderRadius: '1em',
-                    // boxShadow: '1px 10px 30px rgba(0,0,0,0.2)'
                 }}
             >
 
@@ -131,11 +125,10 @@ export default function UserDetails() {
                 <Stack className="col-md-4">
                     <Stack styles={{
                         root: {
-                            // width: '350px',
-                            // maxHeight: "650px",
+
                             width: "70%",
                             margin: '5em auto',
-                            padding: '20px',
+                            padding : "20px",
                             border: '1px solid #ccc',
                             backgroundColor: 'rgba(255,255,255,0.8)',
                             backdropFilter: "blur(5px)",
