@@ -49,8 +49,11 @@ export default function UserDetails() {
     const [isloggedIn, setIsLoggedin] = useState(false)
     useEffect(() => {
         fetchUserData();
-        setIsLoggedin(localStorage.getItem('isloggedIn') === "true")
+        setIsLoggedin(sessionStorage.getItem('isloggedIn') === "true")
     }, []);
+    if (sessionStorage.length === 0) {
+        navigate("/login")
+    }
 
 
     const fetchUserData = () => {
@@ -114,7 +117,7 @@ export default function UserDetails() {
             {isloggedIn && <Stack horizontal horizontalAlign='center' className='row container mt-5'
                 style={{
                     margin: 'auto',
-                    width : "100%"
+                    width: "100%"
                     // padding: '20px',
                     // border: '1px solid #ccc',
                     // backgroundColor: 'rgba(255,255,255,0.8)',
@@ -130,7 +133,7 @@ export default function UserDetails() {
                         root: {
                             // width: '350px',
                             // maxHeight: "650px",
-                            width :"70%" ,
+                            width: "70%",
                             margin: '5em auto',
                             padding: '20px',
                             border: '1px solid #ccc',
@@ -158,7 +161,7 @@ export default function UserDetails() {
                                 <Text style={{ fontSize: "1.5em", marginTop: ".5em" }}> {userProfData?.name}</Text>
                             </Stack>
                             <Stack horizontal horizontalAlign='center'>
-                                <Text style={{ fontSize: "1em", marginTop: ".5em" }}>User Name   : <span style={{fontWeight  : "bolder"}}>{userProfData?.userName}</span></Text>
+                                <Text style={{ fontSize: "1em", marginTop: ".5em" }}>User Name   : <span style={{ fontWeight: "bolder" }}>{userProfData?.userName}</span></Text>
                             </Stack>
                             <Stack horizontal horizontalAlign='center'>
                                 <Text style={{ fontSize: "1em", marginTop: ".5em" }}><CallRegular />+91 {userProfData?.phoneNumber}</Text>

@@ -16,8 +16,8 @@ export default function Navbar({ setSearchValue, setApiEndpoint }: UserDetailsPr
   const navigate = useNavigate();
   const [isloggedIn, setIsLoggedin] = useState(false)
   useEffect(() => {
-    setIsLoggedin(localStorage.getItem('isloggedIn') === "true")
-    setRole(localStorage.getItem('role') || "user")
+    setIsLoggedin(sessionStorage.getItem('isloggedIn') === "true")
+    setRole(sessionStorage.getItem('role') || "user")
     setSearchValue(nameFilter)
   }, [role, nameFilter, setSearchValue]);
 
@@ -30,7 +30,7 @@ export default function Navbar({ setSearchValue, setApiEndpoint }: UserDetailsPr
     axios.patch('http://localhost:5028/api/UserService/logout/me', {}, { withCredentials: true })
       .then(() => {
         alert("Logged out");
-        localStorage.clear()
+        sessionStorage.clear()
         navigate('/login');
         window.location.reload()
       })

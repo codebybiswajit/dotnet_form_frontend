@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Stack } from '@fluentui/react';
 import {
+  // Avatar,
   Button,
   Label,
   Table,
@@ -14,7 +15,9 @@ import {
 import axios from 'axios';
 import {
   AddRegular,
-  Delete24Regular
+  Delete24Regular,
+  NextFrameRegular,
+  PreviousFrameRegular
 } from '@fluentui/react-icons';
 import { useNavigate } from 'react-router-dom';
 import { Dropdown, Option, } from '@fluentui/react-components';
@@ -53,6 +56,7 @@ export default function AllUserDetails({ searchValue, apiEndpoint }: SearchProps
   const [currentPage, setCurrentPage] = useState(1);
   const [limit, setLimit] = useState(8);
   const [count, setCount] = useState(0);
+  const [sl, setSl] = useState(1)
   const navigate = useNavigate();
   const sortOptions = [
     { value: 1, label: "1", },
@@ -64,6 +68,9 @@ export default function AllUserDetails({ searchValue, apiEndpoint }: SearchProps
   ];
   const [isloggedIn, setIsLoggedin] = useState(false)
 
+  if (sessionStorage.length === 0) {
+    navigate("/login")
+  }
 
 
   const handleRemove = (_id: string) => {
@@ -78,7 +85,6 @@ export default function AllUserDetails({ searchValue, apiEndpoint }: SearchProps
         alert(`Error  : ${err}`);
       });
   };
-  debugger;
   useEffect(() => {
     const endpoint =
       apiEndpoint && apiEndpoint.trim() !== ''
@@ -98,10 +104,12 @@ export default function AllUserDetails({ searchValue, apiEndpoint }: SearchProps
       .catch((err) => {
         console.error('Error fetching user data:', err);
       });
+
+    setSl((currentPage - 1) * limit + 1)
   }, [apiEndpoint, currentPage, limit]);
 
   useEffect(() => {
-    setIsLoggedin(localStorage.getItem('isloggedIn') === "true")
+    setIsLoggedin(sessionStorage.getItem('isloggedIn') === "true")
     const filteredUsers = searchValue.length !== 0
       ? allUsers.filter(user =>
         user.name.toLowerCase().includes(searchValue.toLowerCase())
@@ -158,23 +166,29 @@ export default function AllUserDetails({ searchValue, apiEndpoint }: SearchProps
         >
           <Table>
             <TableHeader>
-              <TableRow style={{ borderBottom: '.1em solid', marginTop: '.2em' , width : "100%"}}>
-                <TableHeaderCell  style={{ width: '5%'}}>Sl No.</TableHeaderCell>
-                <TableHeaderCell  style={{ width: '12%'}}>Name</TableHeaderCell>
-                <TableHeaderCell  style={{ width: '8%'}} >Username</TableHeaderCell>
-                <TableHeaderCell  style={{ width: '15%'}} >Email</TableHeaderCell>
-                <TableHeaderCell  style={{ width: '8%'}}>Phone</TableHeaderCell>
-                <TableHeaderCell  style={{ width: '8%'}}>DOB</TableHeaderCell>
-                <TableHeaderCell  style={{ width: '9%'}}>Created At</TableHeaderCell>
-                <TableHeaderCell  style={{ width: '20%'}}>Qualifications</TableHeaderCell>
-                <TableHeaderCell  style={{ width: '15%'}}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Action</TableHeaderCell>
+              <TableRow style={{ borderBottom: '.1em solid', marginTop: '.2em', width: "100%" }}>
+                <TableHeaderCell style={{ width: '5%' }}>Sl No.</TableHeaderCell>
+                <TableHeaderCell style={{ width: '12%' }}>Name</TableHeaderCell>
+                <TableHeaderCell style={{ width: '13%' }} >Username</TableHeaderCell>
+                <TableHeaderCell style={{ width: '15%' }} >Email</TableHeaderCell>
+                <TableHeaderCell style={{ width: '8%' }}>Phone</TableHeaderCell>
+                <TableHeaderCell style={{ width: '8%' }}>DOB</TableHeaderCell>
+                <TableHeaderCell style={{ width: '9%' }}>Created At</TableHeaderCell>
+                <TableHeaderCell >Qualifications</TableHeaderCell>
+                <TableHeaderCell style={{ width: '8%', display: "flex", justifyContent: "center", alignItems: " center" }}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Action</TableHeaderCell>
               </TableRow>
             </TableHeader>
             <TableBody>
               {toRender.map((user, index) => (
                 <TableRow key={user.id} style={{ borderBottom: '.1em solid', marginTop: '.2em' }}>
-                  <TableCell >{index + 1}</TableCell>
-                  <TableCell >{user.name}</TableCell>
+                  <TableCell >{sl}</TableCell>
+                  <TableCell >
+                    {/* <Avatar
+                    name= {user.name}
+                    shape='circular'
+                    style={{ border : "1px solid black",  borderRadius : "50%" , marginRight : "1em"}}
+                  ></Avatar> */}
+                    {user.name}</TableCell>
                   <TableCell >{user.userName}</TableCell>
                   <TableCell >{user.email || 'N/A'}</TableCell>
                   <TableCell >{user.phoneNumber}</TableCell>
@@ -237,13 +251,13 @@ export default function AllUserDetails({ searchValue, apiEndpoint }: SearchProps
 
               </Stack>
             </Dropdown>
-            <Stack horizontal horizontalAlign='center' tokens={{ childrenGap: 10 }} >
+            <Stack horizontal horizontalAlign='space-between'  >
               <Button
                 disabled={currentPage === 1}
                 onClick={() => setCurrentPage(currentPage - 1)}
                 style={{ marginLeft: "5em" }}
               >
-                Prev
+                <PreviousFrameRegular fontSize={36} />
               </Button>
               <Stack horizontal horizontalAlign='center'>
                 {(() => {
@@ -275,7 +289,7 @@ export default function AllUserDetails({ searchValue, apiEndpoint }: SearchProps
                 }}
                 style={{ marginLeft: "1em" }}
               >
-                Next
+                <NextFrameRegular fontSize={36} />
               </Button>
             </Stack>
           </Stack>

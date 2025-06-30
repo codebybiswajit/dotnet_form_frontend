@@ -58,15 +58,15 @@ export default function Login() {
         alert(response.data.message);
         setUsername('');
         setPassword('');
-        window.localStorage.setItem("role", response.data.user.role);
-        window.localStorage.setItem("isloggedIn", "true");
+        window.sessionStorage.setItem("role", response.data.user.role);
+        window.sessionStorage.setItem("isloggedIn", "true");
         if (response.data.user.role === 'admin') {
           navigate('/all_user_details')
         } else { navigate('/user_details') }
         window.location.reload()
       })
       .catch(error => {
-        window.localStorage.setItem("isloggedIn", "false");
+        window.sessionStorage.setItem("isloggedIn", "false");
         // console.error('Login failed:', error);
         alert('User Not Found');
       });
